@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragmentMinutnik">
+
+
+    <TextView
+            android:id="@+id/tvMinutnikCzas"
+            android:text="00:00"
+            android:textSize="48sp"
+            android:textAlignment="center"
+            android:layout_width="409dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="96dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.269" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <Button
+            android:id="@+id/buttonStart"
+            android:text="Start"
+            android:layout_width="104dp"
+            android:layout_height="61dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvMinutnikCzas"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.255"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:id="@+id/buttonPauza"
+            android:text="Pauza"
+            android:layout_width="119dp"
+            android:layout_height="52dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonStart"
+            app:layout_constraintBottom_toTopOf="@+id/buttonStop" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:id="@+id/buttonStop"
+            android:text="Stop"
+            android:layout_height="63dp" android:layout_width="127dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvMinutnikCzas"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.68"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:text="KONFIGURACJA"
+            android:layout_width="195dp"
+            android:layout_height="56dp" android:id="@+id/buttonKonfiguracja"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="45dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/buttonStop"
+            app:layout_constraintVertical_bias="0.85"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
