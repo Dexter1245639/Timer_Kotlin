@@ -14,6 +14,7 @@ class fragmentMinutnik : Fragment() {
     private var isRunning = false
     private var pozostalyCzas: Long = 0L
     private var czasStartu: Long = 0L
+    private var test: String = "test"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
