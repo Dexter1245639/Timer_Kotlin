@@ -11,13 +11,9 @@ class MainActivity : AppCompatActivity(), FragmentNavigation {
         setContentView(R.layout.activity_main)
 
         if (savedInstanceState == null) {
-            replaceFragment(fragmentKonfiguracja())
+            navigateToFragment(fragmentKonfiguracja())
         }
     }
-    private fun replaceFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentMainActivity, fragment).commit()
-    }
-
     override fun navigateToFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().replace(R.id.fragmentMainActivity, fragment).commit()
     }
